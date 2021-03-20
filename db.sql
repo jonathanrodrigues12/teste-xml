@@ -1,0 +1,72 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: robb0527.locaweb.com.br
+-- Generation Time: Mar 20, 2021 at 05:54 PM
+-- Server version: 5.6.37-82.2-log
+-- PHP Version: 5.6.40-0+deb8u12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `agencia_care`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `NOTA_FISCAL`
+--
+
+CREATE TABLE `NOTA_FISCAL` (
+  `ID` int(11) NOT NULL,
+  `NUM_NOTA` varchar(100) NOT NULL,
+  `DATA_NOTA` datetime NOT NULL,
+  `DESTINATARIO` varchar(100) NOT NULL,
+  `VALOR_NOTA` decimal(16,2) NOT NULL,
+  `XML` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `NOTA_FISCAL`
+--
+
+INSERT INTO `NOTA_FISCAL` (`ID`, `NUM_NOTA`, `DATA_NOTA`, `DESTINATARIO`, `VALOR_NOTA`, `XML`) VALUES
+(13, '23970', '2021-01-18 22:25:37', 'ANDREA REGINA CARDOSO VERA', 840.00, '9583e18869f167e0fe6a45efb0d7c699.xml'),
+(14, '20170', '2020-12-18 15:09:17', 'SAMSUNG ELETRONICA DA AMAZONIA LTDA', 1883.14, '34eba671ca0e02729c79924a68d02526.xml'),
+(15, '24755', '2021-01-22 18:25:52', 'Leonardo da Silva Diuncanse', 840.00, 'c9d508c6cb143932d290471630c728c7.xml');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `NOTA_FISCAL`
+--
+ALTER TABLE `NOTA_FISCAL`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `NOTA_FISCAL`
+--
+ALTER TABLE `NOTA_FISCAL`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
