@@ -1,4 +1,4 @@
-Teste para desenvolvedor  Care - Jonathan Rodrigues
+Teste para desenvolvedor 
 ==============================
 
 1 - Importe o arquivo [db.sql](db.sql) no banco de dados mysql
@@ -46,7 +46,6 @@ Gerenciar as notas fiscais do cliente.
 Requisitos funcionais:
 
 1.	O sistema deve ter uma tela para realizar upload de um arquivo na extensão ".xml"
-
 2.	O sistema deve validar se o arquivo é uma extensão .xml
 4.	O sistema deve permitir somente o upload do arquivo xml se o campo CNPJ do emitente(<emit>) for "09066241000884"
 5.	O sistema deve validar se a nota possui protocolo de autorização preenchido (campo <nProt>) 6.
